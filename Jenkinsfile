@@ -15,8 +15,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'No deployment required
+                echo 'No deployment required'
                 }
+        }
             }
     }
     post {

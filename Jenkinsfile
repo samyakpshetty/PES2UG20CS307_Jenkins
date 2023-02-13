@@ -4,19 +4,19 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                sh 'g++ new.cpp -o program'
+                sh 'g++ main.cpp -o PES2UG20CS307-1'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing the project...'
-                sh './program'
+                sh './PES2UG20CS307-1'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying the project...'
-                sh 'scp program user@server:/var/www/program'
+                sh 'scp PES2UG20CS307-1 user@server:/var/www/program'
             }
         }
     }

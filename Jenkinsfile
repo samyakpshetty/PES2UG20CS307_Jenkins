@@ -15,10 +15,10 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'No deployment required'
-                }
-        }
+                sh './deploy.sh my_program user@myserver:/var/www'
             }
+        }
+            
     }
     post {
         failure {

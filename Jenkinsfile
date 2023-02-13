@@ -14,8 +14,8 @@ pipeline {
             }
         }
         stage('Deploy') {
-            steps {
-                sh './deploy.sh my_program user@myserver:/var/www'
+             steps {
+                 echo 'No deployment required'
             }
         }
             

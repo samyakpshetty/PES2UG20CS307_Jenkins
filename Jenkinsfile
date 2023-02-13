@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the project...'
-                sh 'scp PES2UG20CS307-1 user@server:/var/www/program'
+                sh 'scp PES2UG20CS307-1 PES2UG20CS307@server:/var/www/program'
             }
         }
     }
